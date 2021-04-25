@@ -8,12 +8,14 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-          <div class="icon"><i class="icofont-computer"></i></div>
-          <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+        @foreach ($allServices as $service)
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="{{$service->icone}}"></i></div>
+            <h4 class="title"><a href="">{{$service->titre}}</a></h4>
+            <p class="description">{{$service->texte}}</p>
+          </div>
+        @endforeach
+        {{-- <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
           <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
           <h4 class="title"><a href="">Dolor Sitema</a></h4>
           <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
@@ -37,7 +39,7 @@
           <div class="icon"><i class="icofont-tasks-alt"></i></div>
           <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
           <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-        </div>
+        </div> --}}
       </div>
 
     </div>

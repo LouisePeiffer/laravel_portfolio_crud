@@ -9,7 +9,6 @@
         @include('pages.portfolio')
         @include('pages.services')
         @include('pages.contact')
-        @include('pages.footer')
     </main>
     @include('pages.footer')
 @endsection
