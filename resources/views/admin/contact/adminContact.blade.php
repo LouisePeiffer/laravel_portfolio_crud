@@ -1,13 +1,13 @@
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
     <div class="container">
-
+      @include('layouts.flash')
       <div class="section-title">
         <h2>Contact</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
 
-      <div class="row" data-aos="fade-in">
+      <div class="row" data-aos="fade-in"> 
 
         <div class="col-lg-5 d-flex align-items-stretch">
           <div class="info">
@@ -38,7 +38,7 @@
 
         </div>
 
-        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+        {{-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -69,7 +69,7 @@
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
-        </div>
+        </div> --}}
 
       </div>
 

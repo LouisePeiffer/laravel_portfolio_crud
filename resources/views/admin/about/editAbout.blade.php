@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Edit About</h1>
-    <a href="/admin">Retour</a>
+    <a href="{{url('/admin' . '#aboutAdmin')}}">Retour</a>
     <div>
         @foreach ($allAbout as $about)
                 <div class="section-title">

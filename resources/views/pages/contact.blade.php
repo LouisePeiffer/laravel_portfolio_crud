@@ -37,7 +37,8 @@
         </div>
 
         <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="{{route('store.email')}}" method="post" role="form">
+            @csrf
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="name">Your Name</label>
@@ -61,11 +62,11 @@
               <div class="validate"></div>
             </div>
             <div class="mb-3">
-              <div class="loading">Loading</div>
+              {{-- <div class="loading">Loading</div>
               <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="sent-message">Your message has been sent. Thank you!</div> --}}
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit" class="btn btn-primary">Send Message</button></div>
           </form>
         </div>
 

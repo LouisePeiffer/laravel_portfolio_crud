@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Edit facts</h1>
-    <a href="{{route('admin')}}">Retour</a>
+    <a href="{{url('/admin' . '#facts')}}">Retour</a>
     <div class="row">
 
         @foreach ($allFacts as $fact)
@@ -25,7 +25,7 @@
                         
                         <button class="btn btn-primary mt-3" type="submit">Modifier</button>
                     </div>
-            </form>
+                </form>
         @endforeach
     </div>
 @endsection

@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Edit Skills</h1>
-    <a href="{{route('admin')}}">Retour</a>
+    <a href="{{url('/admin' . '#skills')}}">Retour</a>
     <div class="row">
 
         @foreach ($allSkills as $skill)

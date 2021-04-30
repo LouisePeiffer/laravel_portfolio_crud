@@ -23,8 +23,8 @@
         <li><a href="#aboutAdmin"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
-        <li><a href=""><i class="bx bx-mail"></i> Emails</a></li>
-        <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+        <li><a href="#contact"><i class="bx bx-book"></i> Contact</a></li>
+        <li><a href="{{route('admin.email')}}"><i class="bx bx-comment-detail"></i> Emails</a></li>
 
         </ul>
     </nav><!-- .nav-menu -->

@@ -14,6 +14,17 @@ class AdminAboutController extends Controller
             return view('admin.about.editAbout', compact('about','allAbout'));
         }
         public function update (About $id, Request $request) {
+            request()->validate([
+                "birthday" => ["required"],
+                "website" => ["required"],
+                "phone" => ["required"],
+                "age" => ["required"],
+                "degree" => ["required"],
+                "email" => ["required"],
+                "freelance" => ["required"],
+                "city" => ["required"],
+            ]);
+            
             $about = $id;
             // $about->fonction = $request->fonction;
             $about->birthday = $request->birthday;
@@ -26,6 +37,6 @@ class AdminAboutController extends Controller
             $about->city = $request->city;
             // $about->save();
             $about->save();
-            return redirect()->route('admin');
+            return redirect("/admin" . "#aboutAdmin");
         }
 }

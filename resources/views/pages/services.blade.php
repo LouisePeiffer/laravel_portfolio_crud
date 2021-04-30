@@ -15,7 +15,9 @@
             <p class="description">{{$service->texte}}</p>
           </div>
         @endforeach
+        <div class="col-12 d-flex justify-content-center">
+          {{ $allServices->links() }}
+        </div>
       </div>
-
     </div>
   </section><!-- End Services Section -->

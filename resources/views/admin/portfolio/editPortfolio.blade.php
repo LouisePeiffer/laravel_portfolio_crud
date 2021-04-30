@@ -3,7 +3,7 @@
 @section('content')
     <h1>Edit Porfotlio</h1>
     <a href="/admin">Retour</a>
-    <a href="{{route('admin')}}">Retour</a>
+    {{-- <a href="{{route('admin')}}">Retour</a> --}}
     <div class="row">
             <form action="{{route('update.portfolio', $portfolio->id)}}" method="POST">
                 @csrf
@@ -13,8 +13,12 @@
                         <label for="image">Image</label>
                         <input type="text" value="{{$portfolio->image}}" class="form-control" id="image" name="image" placeholder="image">
 
-                        <label for="filter">Filter</label>
-                        <input type="text" value="{{$portfolio->filter}}" class="form-control" id="filter" name="filter" placeholder="filter">
+                        <select name="filter" id="filter">
+                            <option value="">--Please choose an option--</option>
+                            <option value="filter-app">App</option>
+                            <option value="filter-web">Web</option>
+                            <option value="filter-card">Card</option>
+                        </select>
                         
                         <button class="btn btn-primary mt-3" type="submit">Modifier</button>
                     </div>

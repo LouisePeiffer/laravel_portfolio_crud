@@ -28,6 +28,32 @@ class AdminFactController extends Controller
         $fact->titre = $request->titre;
         $fact->texte = $request->texte;
         $fact->save();
-        return redirect()->route('admin')->with('success', 'Vos modifications ont été enregistrées.');
+        return redirect('/admin' . '#facts')->with('success', 'Vos modifications ont été enregistrées.');
+    }
+    // CREATE
+    public function create() {
+        return view('admin.facts.createFacts');
+    }
+    public function store (Request $request) {
+        request()->validate([
+            "icone" => ["required"],
+            "chiffre" => ["required", "numeric"],
+            "titre" => ["required"],
+            "texte" => ["required"],
+        ]);
+
+        $fact = new Fact();
+        $fact->icone = $request->icone;
+        $fact->chiffre = $request->chiffre;
+        $fact->titre = $request->titre;
+        $fact->texte = $request->texte;
+        $fact->save();
+        return redirect('/admin' . '#facts')->with('success', 'Vos modifications ont été enregistrées.');
+    }
+    
+    // DELETE
+    public function destroy(Fact $id) {
+        $id->delete();
+        return redirect('/admin' . '#facts')->with('success', 'Vos modifications ont été enregistrées.');
     }
 }

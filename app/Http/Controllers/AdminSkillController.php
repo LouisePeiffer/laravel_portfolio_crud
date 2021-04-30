@@ -14,6 +14,11 @@ class AdminSkillController extends Controller
         return view('admin.skills.editSkills', compact('skill','allSkills'));
     }
     public function update (Skill $id, Request $request) {
+        request()->validate([
+            "skill" => ["required"],
+            "percent" => ["required"],
+        ]);
+
         $skill = $id;
         $skill->skill = $request->skill;
         $skill->percent = $request->percent;
