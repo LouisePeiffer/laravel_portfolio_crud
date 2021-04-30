@@ -20,8 +20,8 @@
               </div>
             </div>
           </div>
-        @endforeach
-
+          @endforeach
+          <a href="{{route('edit.skill', $skill->id)}}" class="btn btn-success w-100 p-2 m-2">Edit</a>
         </div>
       </div>
 

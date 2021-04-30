@@ -1,4 +1,3 @@
-
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
     <div class="container">

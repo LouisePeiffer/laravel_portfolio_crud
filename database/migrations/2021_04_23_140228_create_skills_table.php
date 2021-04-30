@@ -16,7 +16,6 @@ class CreateSkillsTable extends Migration
         Schema::create('skills', function (Blueprint $table) {
             $table->id();
             $table->string('skill');
-            $table->integer('ariavaluenow');
             $table->integer('percent');
             $table->timestamps();
         });

@@ -20,9 +20,10 @@
     <nav class="nav-menu">
         <ul>
         <li class="active"><a href="/"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#aboutAdmin"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
+        <li><a href=""><i class="bx bx-mail"></i> Emails</a></li>
         <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
 
         </ul>
@@ -35,6 +36,7 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
+    <h1>Bienvenue sur la page Admin</h1>
     <h1>Alex Smith</h1>
     <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
     </div>
